@@ -28,7 +28,7 @@ Register an account with [Algorithmia](http://algorithmia.com) and configure you
 
 ## Algorithms
 
-### Generic algortim runner
+### Generic algorithm runner
 WIP: Algorithmia.run_algo(algorithm_name, data)
 
 ```elixir
