@@ -19,6 +19,12 @@ defmodule Algorithmia.NLP do
     request(url, body)
   end
 
+  def summarize_url(param_url) do
+    url = "https://api.algorithmia.com/v1/algo/nlp/SummarizeURL/0.1.2"
+    body = Poison.encode! param_url
+    request(url, body)
+  end
+
   defp request(url, body, content_type \\ "application/json") do
     api_key = Application.get_env(:algorithmia, :simple_api_key)
     headers = [{"Content-Type", content_type}, {"Authorization", "Simple #{api_key}"}]
