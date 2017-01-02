@@ -35,3 +35,14 @@ iex> Algorithmia.NLP.summarizer "This is a long test text..."
 %{"metadata" => %{"content_type" => "text", "duration" => 5.44276e-4},
   "result" => "This is a long text test."}
 ```
+
+### Sentiment Analysis 1.0.2 [(See API page)](https://algorithmia.com/algorithms/nlp/SentimentAnalysis)
+
+Returns sentiment value between -1 and 1 (very negative to very positive)
+
+```elixir
+iex> Algorithmia.NLP.sentiment_analysis "I really like this library"
+%{"metadata" => %{"content_type" => "json", "duration" => 1.188705657},
+  "result" => [%{"document" => "I really like this library",
+     "sentiment" => 0.4201}]}
+```
