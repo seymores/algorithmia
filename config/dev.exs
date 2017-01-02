@@ -1,4 +1,6 @@
 use Mix.Config
 
-config :algorithmia,
-  simple_api_key: "simlvC7/1t3U1fwSuZjZDjxl0ts1"
+# config :algorithmia,
+#   simple_api_key: "YOUR API KEY HERE"
+
+import_config "dev.secret.exs"
