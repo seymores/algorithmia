@@ -11,11 +11,12 @@ defmodule Algorithmia.Mixfile do
   end
 
   def application do
-    [applications: [:logger],
-     mod: {Algorithmia, [:httpoison]}]
+    [applications: [:logger, :httpoison],
+     mod: {Algorithmia, []}]
   end
 
   defp deps do
-    [{:httpoison, "~> 0.10.0"}]
+    [ {:poison, "~> 3.0", override: true},
+      {:httpoison, "~> 0.10.0"}]
   end
 end
