@@ -1,6 +1,6 @@
 # Algorithmia
 
-**TODO: Add description**
+[Algorithmia](http://developers.algorithmia.com) Elixir client
 
 ## Installation
 
@@ -10,7 +10,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
     ```elixir
     def deps do
-      [{:algorithmia, "~> 0.1.0"}]
+      [{:algorithmia, "~> 0.2.0"}]
     end
     ```
 
