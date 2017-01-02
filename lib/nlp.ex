@@ -1,5 +1,5 @@
 defmodule Algorithmia.NLP do
-
+  import Algorithmia.Common, only: :functions
 
   def summarizer(input) do
     url = "https://api.algorithmia.com/v1/algo/nlp/Summarizer/0.1.3"    
@@ -23,17 +23,6 @@ defmodule Algorithmia.NLP do
     url = "https://api.algorithmia.com/v1/algo/nlp/SummarizeURL/0.1.2"
     body = Poison.encode! param_url
     request(url, body)
-  end
-
-  defp request(url, body, content_type \\ "application/json") do
-    api_key = Application.get_env(:algorithmia, :simple_api_key)
-    headers = [{"Content-Type", content_type}, {"Authorization", "Simple #{api_key}"}]
-    options = [ssl: [{:versions, [:'tlsv1.2']}], recv_timeout: 5000]
-
-    case HTTPoison.post(url, body, headers, options) do
-      {:ok, response} -> response.body |> Poison.decode!
-      {_, msg} -> msg
-    end
   end
 
 end
