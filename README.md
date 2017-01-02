@@ -28,6 +28,15 @@ Register an account with [Algorithmia](http://algorithmia.com) and configure you
 
 ## Algorithms
 
+### Generic algortim runner
+WIP: Algorithmia.run_algo(algorithm_name, data)
+
+```elixir
+iex> Algorithmia.run_algo("nlp/SentimentAnalysis/1.0.2", %{document: "I love this library"})
+%{"metadata" => %{"content_type" => "json", "duration" => 0.9005015780000001},
+  "result" => [%{"document" => "I love this library", "sentiment" => 0.6369}]}
+```
+
 ### nlp/Summarizer 0.1.3 [(See API page)](https://algorithmia.com/algorithms/nlp/Summarizer)
 
 ```elixir

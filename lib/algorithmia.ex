@@ -17,4 +17,15 @@ defmodule Algorithmia do
     opts = [strategy: :one_for_one, name: Algorithmia.Supervisor]
     Supervisor.start_link(children, opts)
   end
+
+
+  @doc """
+    Generic algorithm runner, just provide algo name and expected data.
+
+  """
+  def run_algo(name, data) do
+    body = Poison.encode! data
+    Algorithmia.Common.request(name, body)
+  end
+
 end
