@@ -1,6 +1,7 @@
 # Algorithmia
 
 [Algorithmia](http://developers.algorithmia.com) Elixir client.
+[See all algorithms here.](https://algorithmia.com/algorithms)
 
 ## Setup
 Register an account with [Algorithmia](http://algorithmia.com) and configure your simple API key in config/dev.exs.
@@ -27,7 +28,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
 ## Algorithms
 
-### Summarizer 0.1.3
+### Summarizer 0.1.3 [(See API page)](https://algorithmia.com/algorithms/nlp/Summarizer)
 
 ```elixir
 iex> Algorithmia.NLP.summarizer "This is a long test text..."
