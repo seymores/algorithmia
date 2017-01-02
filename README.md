@@ -46,3 +46,11 @@ iex> Algorithmia.NLP.sentiment_analysis "I really like this library"
   "result" => [%{"document" => "I really like this library",
      "sentiment" => 0.4201}]}
 ```
+
+### Auto Tag 1.0.0 [(See API page)](https://algorithmia.com/algorithms/nlp/AutoTag)
+
+```elixir
+iex> Algorithmia.NLP.auto_tag "This is a large test of fish keyword"
+%{"metadata" => %{"content_type" => "json", "duration" => 0.048270531000000005},
+  "result" => ["keyword", "fish", "large", "test"]}
+```
