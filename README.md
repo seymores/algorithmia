@@ -3,6 +3,8 @@
 [Algorithmia](http://developers.algorithmia.com) Elixir client.
 [See all algorithms here.](https://algorithmia.com/algorithms)
 
+Please raise issue to request support for algorithm not listed here.
+
 ## Setup
 Register an account with [Algorithmia](http://algorithmia.com) and configure your simple API key in config/dev.exs.
 
