@@ -8,13 +8,11 @@ Register an account with [Algorithmia](http://algorithmia.com) and configure you
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
   1. Add `algorithmia` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:algorithmia, "~> 0.2.0"}]
+      [{:algorithmia, git: "https://github.com/seymores/algorithmia"}]
     end
     ```
 
