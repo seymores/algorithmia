@@ -16,7 +16,7 @@ defmodule Algorithmia.Mixfile do
   end
 
   defp deps do
-    [ {:poison, "~> 3.0", override: true},
+    [ {:poison, "~> 3.1", override: true},
       {:httpoison, "~> 0.10.0"}]
   end
 end
